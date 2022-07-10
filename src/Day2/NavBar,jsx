@@ -1,0 +1,24 @@
+import React from 'react'
+import '../App.css'
+import {NavLink} from 'react-router-dom'
+import Parent from './props/parent'
+
+
+function Nav() {
+  return (
+
+<div> 
+  <Parent/>
+  <ul>
+
+    <NavLink to='/Home'>Home</NavLink>
+    <NavLink to='/ContactUs'>ContactUs</NavLink>
+    <NavLink to='/PageNotFound'>PageNotFound</NavLink>
+
+  </ul>
+</div>
+
+  )
+}
+
+export default Nav
